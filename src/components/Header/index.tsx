@@ -1,15 +1,15 @@
  import { Search } from '../Search';
-import { UploadBtn } from '../UploadBtn';
+import { Button } from '../Button';
 import * as C from './styles';
 
  export const Header = () => {
     return (
         <C.Container>
             <C.ContentArea>
-                <C.Title>Galeria de Imagens</C.Title>
+                <C.Title>Galeria de Fotos</C.Title>
                 <C.Options>
                     <Search />
-                    <UploadBtn />
+                    <Button btnName={'Adicionar Imagem'}/>
                 </C.Options>
             </C.ContentArea>
         </C.Container>

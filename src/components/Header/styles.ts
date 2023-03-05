@@ -4,9 +4,10 @@ export const Container = styled.div`
     position: fixed;
     width: 100%;
     height: 130px;
-    box-shadow: 1px 1px 8px #ccc;
+    box-shadow: 2px 2px 8px #bbb;
     display: flex;
     justify-content:center;
+    background-color: #fff;
 `;
 
 export const ContentArea = styled.div`
