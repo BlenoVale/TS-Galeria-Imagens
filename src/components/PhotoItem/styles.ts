@@ -9,13 +9,18 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: pointer;
 
     img {
         width: auto;
         max-height: 9.5em;
         margin-bottom: 10px;
         border-radius: 10px;
+        cursor: pointer;
+        transition: all ease .3s;
+
+        &:hover {
+            opacity: .6;
+        }
     }
 
     .infos {
@@ -24,6 +29,24 @@ export const Container = styled.div`
 
         .photo-name {
             flex: 1;
+        }
+
+        .rightSide-content {
+            display: flex;
+            gap: 8px;
+        }
+
+        button {
+            border: none;
+            background-color: #fd6085;
+            padding: 2px 10px;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d14362;
+            }
         }
 
         .photo-format {
@@ -38,7 +61,4 @@ export const Container = styled.div`
         }
     }
 
-    &:hover {
-        background-color: #f6f6f6;
-    }
 `;

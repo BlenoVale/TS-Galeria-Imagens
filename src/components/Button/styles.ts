@@ -1,6 +1,7 @@
+import { style } from "@mui/system";
 import styled from "styled-components";
 
-export const Container = styled.form`
+export const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -21,7 +22,15 @@ export const Button = styled.button`
     cursor: pointer;
     transition: all ease .4s;
 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
     &:hover {
         opacity: .8;
     }
+`;
+
+export const HiddenInput = styled.input`
+    display: none;
 `;
